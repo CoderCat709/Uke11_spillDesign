@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bakgrunn {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.piler {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 180vh;
+}
+
+.piler img {
+    cursor: pointer;
+    width: 15vh;
+}
+
+.skjult {
+    visibility: hidden;
+}
+
+.stige {
+    position: fixed;
+    bottom: 18%;
+    left: 55%;
+    width: 8vh;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.stige:hover {
+    opacity: 0.8;
+}
+/* Style for the draggable ladder when it's being dragged ikke lag av meg!! */
+.draggable-stige {
+    display: none;
+    position: fixed;
+    bottom: 20%;
+    left: 10%;
+    width: 8vh;
+    cursor: grab;
+    z-index: 10;
+}
+
+#fence-dropzone {
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    height: 60%;
+    z-index: 5;
+}
